@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 gulp.task('build-component', function() {
   // place code for your default task here
     gulp.src('src/*/main.html')
-        //.pipe(plugins.watch('src/*/*.html'))
+        .pipe(plugins.watch('src/*/*.html'))
         .pipe(plugins.nova({
             combo: {
                 baseUrl: '.'

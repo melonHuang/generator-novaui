@@ -41,6 +41,16 @@ module.exports = yeoman.generators.Base.extend({
             var dest = this.destinationPath('tests/index.html');
             this.template(path, dest);
         },
+        gulpfile: function() {
+            var path = this.templatePath('gulpfile.js');
+            var dest = this.destinationPath('gulpfile.js');
+            this.template(path, dest);
+        },
+        package: function() {
+            var path = this.templatePath('package.json');
+            var dest = this.destinationPath('package.json');
+            this.template(path, dest);
+        },
         src: function() {
             var path = this.templatePath('src/my-element/main.html');
             var dest = this.destinationPath('src/' + this.name + '/main.html');
